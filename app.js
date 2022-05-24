@@ -17,8 +17,8 @@ document.onmousemove=(event)=>{
     mouse.y=event.y
 }
 document.ontouchmove=(event)=>{
-    Touch.clientX=event.x
-    Touch.clientY=event.y
+    mouse.x=event.x
+    mouse.y=event.y
 }
 animate()
 
@@ -28,10 +28,6 @@ function animate(){
     A.y=mouse.y-Math.sin(angle)*radius
     B.x=mouse.x-Math.cos(angle)*radius
     B.y=mouse.y+Math.sin(angle)*radius
-    A.x=Touch.clientX+Math.cos(angle)*radius
-    A.y=Touch.clientY-Math.sin(angle)*radius
-    B.x=Touch.clientX-Math.cos(angle)*radius
-    B.y=Touch.clientY+Math.sin(angle)*radius
     angle+=0.02
 
 
