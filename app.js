@@ -16,7 +16,7 @@ document.onmousemove=(event)=>{
     mouse.x=event.x
     mouse.y=event.y
 }
-document.ontouchmove=(event)=>{
+document.ondragstart=(event)=>{
     mouse.x=event.x
     mouse.y=event.y
 }
