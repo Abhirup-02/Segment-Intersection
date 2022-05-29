@@ -16,7 +16,7 @@ document.onmousemove=(event)=>{
     mouse.x=event.x
     mouse.y=event.y
 }
-document.ondragover=(event)=>{
+document.ondragmove=(event)=>{
     mouse.x=event.x
     mouse.y=event.y
 }
