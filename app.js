@@ -16,7 +16,7 @@ document.onmousemove=(event)=>{
     mouse.x=event.x
     mouse.y=event.y
 }
-document.ondragmove=(event)=>{
+document.ondrag=(event)=>{
     mouse.x=event.clientX
     mouse.y=event.clientY
 }
